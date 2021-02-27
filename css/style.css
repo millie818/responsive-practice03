@@ -1,0 +1,268 @@
+body {
+  font-family: 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Noto Sans JP', 'sans-serif';
+  font-size: 14px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+a:hover {
+  opacity: .6;
+  transition: all .2s;
+}
+
+/* headerここから */
+.header_conotainer {
+  display: flex;
+  justify-content: space-between; 
+}
+
+h1 {
+  margin-top: 30px;
+  margin-left: 33px;
+  margin-bottom: 29px;
+}
+
+.header_nav  {
+  display: flex;
+  align-items: center;
+}
+
+.header_nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 73px;
+}
+
+.header_nav ul li {
+  margin-left: 50px;
+}
+
+.header_nav ul li a {
+  font-family: "ヒラギノ角ゴ Pro W6", 'Noto Sans JP';
+  color: #333333;
+  text-decoration: none;
+}
+
+.contact_btn {
+  display: block;
+  width: 200px;
+  height: 80px;
+  font-family: "ヒラギノ角ゴ Pro W6", 'Noto Sans JP';
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: .05em;
+  text-decoration: none;
+  text-align: center;
+  line-height: 80px;
+  background: #30d0ed;
+}
+
+.main_image {
+  background: url(../images/main-bg.png);
+}
+
+.main_image h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 140px;
+  font-weight: normal;
+  color: #fefefe;
+  line-height: .82;
+  text-align: center;
+  text-shadow: 0 0 7px rgba(106, 185, 223, .7);
+  padding-top: 167px;
+  margin-bottom: 49px;
+}
+
+.main_image p {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fefefe;
+  letter-spacing: .1em;
+  text-align: center;
+  text-shadow: 0 0 7px rgba(106, 185, 223, .7);
+  padding-bottom: 209px;
+}
+/* headerここまで */
+
+/* section.newsここから */
+.news {
+  background: #edfcff;
+  padding-top: 57px;
+  padding-bottom: 63px;
+}
+
+.news .container {
+  display: flex;
+}
+
+.news_title {
+  margin-right: 41px;
+}
+
+.news h2 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 40px;
+  color: #019bdf;
+  letter-spacing: .025em;
+  margin-bottom: 17px;
+}
+
+.news_btn {
+  font-size: 12px;
+  color: #333333;
+  letter-spacing: .075em;
+  text-decoration: none;
+}
+
+.news_lists {
+  width: 100%;
+  padding-top: 8px;
+}
+
+.news_lists dl {
+  display: flex;
+  width: 100%;
+}
+.news_lists hr {
+  border-top: 2px solid #93deff;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.news_lists dt {
+  font-size: 13px;
+  color: #333333;
+  letter-spacing: .075em;
+  padding-left: 2px;
+  padding-bottom: 12px;
+}
+
+.news_lists dt span {
+  display: inline-block;
+  width: 80px;
+  height: 18px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 18px;
+  background: #019bdf;
+  margin-left: 30px;
+}
+
+.news_lists dd a{
+  font-size: 13px;
+  color: #333333;
+  letter-spacing: .075em;
+  text-decoration: none;
+  margin-left: 34px;
+}
+/* section.newsここまで */
+
+/* section.serviceここから */
+.service {
+  padding-top: 79px;
+  text-align: center;
+}
+
+.service h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  color: #019bdf;
+  letter-spacing: .025em;
+  margin-bottom: 12px;
+}
+
+.service p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  color: #019bdf;
+  letter-spacing: .075em;
+  margin-bottom: 21px;
+}
+
+.service_contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* section.serviceここまで */
+
+/* media queries */
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .news .container {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .service_contents {
+    display: block;
+  }
+
+  .service_contents img {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header_nav ul li{
+    margin-left: 30px;
+  }
+
+  .contact_btn {
+    width: 100px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header_nav {
+    display: none;
+  }
+
+  .main_image h2 {
+    font-size: 100px;
+  }
+
+  .main_image p {
+    font-size: 20px;
+  }
+
+  .news_lists dl {
+    display: block;
+  }
+
+  .news_lists dd a {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .service_contents {
+    display: block;
+  }
+
+  .service_contents img {
+    width: 100%;
+  }
+}
+
+@media (max-width:380px) {
+  .main_image h2 {
+    font-size: 80px;
+    padding: 20px 0 0;
+  }
+
+  .main_image p {
+    padding: 0 20px 20px;
+  }
+}
