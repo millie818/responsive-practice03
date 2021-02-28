@@ -46,6 +46,10 @@ h1 {
   text-decoration: none;
 }
 
+.header_nav i {
+  display: none;
+}
+
 .contact_btn {
   display: block;
   width: 200px;
@@ -159,6 +163,9 @@ h1 {
   letter-spacing: .075em;
   text-decoration: none;
   margin-left: 34px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 /* section.newsここまで */
 
@@ -224,9 +231,17 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .header_nav {
+  .header_nav ul, 
+  .header_nav a {
     display: none;
   }
+
+.header_nav i {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 26px;
+  color: #333333;
+}
 
   .main_image h2 {
     font-size: 100px;
